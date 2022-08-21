@@ -1,0 +1,89 @@
+.header {
+    height: 150px;
+    display: flex;
+    &__logo {
+        width: 120.54px;
+        height: 56.07px;
+        margin-top: 35px;
+    }
+    &__menu {
+        margin-top: 69px;
+        display: flex;
+        margin-left: 573.84px;
+        width: 565px;
+        height: 19px;
+    }
+    &__item {
+        list-style: none;
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: $heading_color;
+            transition: 0.5s all;
+            &:active {
+                color: $heading_color;
+            }
+            &:hover {
+                color: $main_color;
+            }
+        }
+        &:first-child {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 4.15px solid transparent; 
+                border-left: 6.25px solid $heading_color;
+                border-bottom: 4.15px solid transparent;
+                left: -9.75px;
+                top: 7.2px;
+            }
+        }        
+    }
+    &__call {
+        margin-top: 48px;
+        width: 283px;
+        height: 69px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__circle {
+        width: 69px;
+        height: 69px;
+        border: none;
+        background: linear-gradient(1.36deg, #B0D3CE 12.29%, #FFEDCE 83.89%);
+        box-shadow: -4px -4px 20px #FFFFFF, 4px 4px 20px #CFD7D3;
+        border-radius: 100%;
+        transition: 0.5s;
+        cursor: pointer;
+        img {
+            display: inline-block;
+            &:hover {
+                animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+            }
+        }
+    }
+    &__tel {
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $heading_color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    &__cart {
+        margin-top: 63.89px;
+        width: 36.42px;
+        height: 32.88px;
+    }
+}

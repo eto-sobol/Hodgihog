@@ -1,0 +1,23 @@
+@import "libs/slick";
+@import "libs/fonts";
+
+@import "base/variables";
+@import "base/animation";
+
+
+* {
+    font-family: Cormorant Infant, serif;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/advantages";
+@import "blocks/carousel";
